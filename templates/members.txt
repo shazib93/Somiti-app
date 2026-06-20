@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Somiti Members</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+        
+        }
+        .card {
+            background-color: lightyellow;
+            border: 2px solid darkgreen;
+            border-radius: 10px;
+            padding: 15px;
+            width: 200px;
+            text-align: center;
+            transition: background-color 0.3s ;
+        }
+        .card:hover {
+            background-color: lightgreen;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Probaho Bondhu Songhothon</h1>
+
+    <div class="container">
+    {% for member in members %}
+    <div class="card">
+        <h3>{{ member }}</h3>
+        <p>Paid: 500 BDT</p>
+        <p>Month: June</p>
+    </div>
+    {% endfor %}
+    </div> 
+</body>
+</html>

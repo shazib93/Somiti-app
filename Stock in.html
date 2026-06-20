@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Timeplus Mediline - Product Availability</title>
+    <style>
+        @page {
+            size: A4;
+            margin: 0;
+        }
+        *, *::before, *::after {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            color: #333333;
+            background-color: #f4f9f4;
+            -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
+        }
+        .container {
+            width: 100%;
+            max-width: 800px;
+            height: 297mm;
+            background-color: #ffffff;
+            margin: 0 auto;
+            position: relative;
+        }
+        .header {
+            background-color: #008000 !important;
+            color: #ffffff !important;
+            text-align: center;
+            padding: 60px 40px;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 38pt;
+            font-weight: 700;
+        }
+        .header p {
+            margin: 15px 0 0 0;
+            font-size: 16pt;
+            opacity: 0.9;
+        }
+        .content {
+            padding: 50px 60px;
+        }
+        .status-badge {
+            background-color: #e6f2e6 !important;
+            color: #008000 !important;
+            display: table;
+            margin: 0 auto 40px auto;
+            padding: 12px 30px;
+            border-radius: 50px;
+            font-size: 15pt;
+            font-weight: bold;
+            border: 2px solid #008000;
+        }
+        .section-title {
+            color: #008000 !important;
+            font-size: 22pt;
+            border-bottom: 3px solid #008000;
+            padding-bottom: 8px;
+            margin-top: 0;
+            margin-bottom: 30px;
+        }
+        .product-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .product-table th {
+            background-color: #008000 !important;
+            color: #ffffff !important;
+            text-align: left;
+            padding: 18px 20px;
+            font-size: 14pt;
+        }
+        .product-table td {
+            padding: 20px 20px;
+            border-bottom: 1px solid #e0e0e0;
+            font-size: 14pt;
+        }
+        .product-table tr:nth-child(even) {
+            background-color: #f9f9f9 !important;
+        }
+        .product-name {
+            font-weight: bold;
+        }
+        .availability {
+            color: #008000 !important;
+            font-weight: bold;
+        }
+        .footer-banner {
+            background-color: #FF0000 !important;
+            color: #ffffff !important;
+            text-align: center;
+            padding: 45px 30px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+        .footer-banner h2 {
+            margin: 0 0 10px 0;
+            font-size: 14pt;
+            color: #ffffff !important;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+        }
+        .hotline-number {
+            font-size: 32pt;
+            color: #ffffff !important;
+            font-weight: bold;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <h1>Timeplus Mediline</h1>
+            <p>(Deals in Diagnostic Reagents & Medical Equipments)</p>
+        </div>
+
+        <div class="content">
+            <div class="status-badge">
+                ✅ All Stock Available
+            </div>
+
+            <h2 class="section-title">Current Product List</h2>
+            
+            <table class="product-table">
+                <thead>
+                    <tr>
+                        <th>Product Description</th>
+                        <th style="width: 30%; text-align: right;">Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="product-name">PT - 50 Test</td>
+                        <td class="availability" style="text-align: right; font-size: 14pt;">Available</td>
+                    </tr>
+                    <tr>
+                        <td class="product-name">PT - 100 Test</td>
+                        <td class="availability" style="text-align: right;">Available</td>
+                    </tr>
+                    <tr>
+                        <td class="product-name">ASO - 50 Test</td>
+                        <td class="availability" style="text-align: right;">Available</td>
+                    </tr>
+                    <tr>
+                        <td class="product-name">ASO - 100 Test</td>
+                        <td class="availability" style="text-align: right;">Available</td>
+                    </tr>
+                    <tr>
+                        <td class="product-name">Welflex</td>
+                        <td class="availability" style="text-align: right;">Available</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="footer-banner">
+            <h2>Hotline For Orders & Inquiries</h2>
+            <div class="hotline-number">01897-914343</div>
+        </div>
+    </div>
+
+</body>
+</html>

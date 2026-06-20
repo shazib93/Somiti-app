@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Edit Member</title>
+</head>
+<body>
+    <h1>Member Edit Koro</h1>
+    <form method="POST" action="/edit/{{ member.id }}">
+        <label>Name:</label>
+        <input type="text" name="naam" value="{{ member.naam }}">
+        <br><br>
+        <label>Amount:</label>
+        <input type="number" name="amount" value="{{ member.amount }}">
+        <br><br>
+        <label>Month:</label>
+        <input type="text" name="month" value="{{ member.month }}">
+        <br><br>
+        <button type="submit">Update</button>
+    </form>
+</body>
+</html>
